@@ -13,15 +13,15 @@ const Hero = () => {
         className={`innerWidth ${css.container}`}
       >
         <div className={css.upperElements}>
-          <motion.span className="primaryText" variants={fadeIn("right", "tween", 0.2, 1)}>
+          <motion.span className={css.textOne} variants={fadeIn("right", "tween", 0.2, 1)}>
             Hey There,
             <br />
-            I'm Binjan.
+            I'm a al mahmudul hasan.
           </motion.span>
           <motion.span className="secondaryText"variants={fadeIn("left", "tween", 0.4, 1)}>
-            I design beautiful simple
+            I am a professional fullstack developer
             <br />
-            things, And I love what i do{" "}
+            Laravel, Codeigniter, nodejs <br /> reactjs, angular, vuejs is my tech stack{" "}
           </motion.span>
         </div>
 
@@ -33,23 +33,31 @@ const Hero = () => {
         </motion.div>
 
         <a className={css.email} href="mailto:zainkeepscode@gmail.com">
-          zainkeepscode@gmail.com
+          mirazlaradev@gmail.com
         </a>
 
         <div className={css.lowerElements}>
-          <motion.div variants={fadeIn("right", "tween", 0.3, 1)} className={css.experience}>
-            <div className="primaryText">10</div>
-            <div className="secondaryText">
-              <div>Years</div>
-              <div>Experience</div>
+          <div className={css.row}>
+            <div className={css.column}>
+                <motion.div variants={fadeIn("right", "tween", 0.3, 1)} className={css.experience}>
+                <div className="primaryText">3</div>
+                <div className="secondaryText">
+                  <div>Years +</div>
+                  <div>Experience</div>
+                </div>
+                </motion.div>
             </div>
-          </motion.div>
-
-          <motion.div variants={fadeIn("left", "tween", 0.5, 1)} className={css.certificate}>
-            <img src="./certificate.png" alt="" />
-            <span>CERTIFIED PROFATIONAL</span>
-            <span>UI/UX DESIGNER</span>
-          </motion.div>
+            <div className={css.column}>
+                <div class="wrapper">
+                <div className={css.textAlign}><motion.img className={css.imageMern} variants={fadeIn("right", "tween", 0.3, 1)} src="./mern.png" alt="" /></div>
+                <div className={css.textAlign}>
+                  <motion.img className={css.image} variants={fadeIn("right", "tween", 0.3, 1)} src="./laravel.jpeg" alt="" />
+                  <motion.img className={css.image} variants={fadeIn("right", "tween", 0.3, 1)} src="./vue.png" alt="" />
+                  <motion.img className={css.image} variants={fadeIn("right", "tween", 0.3, 1)} src="./angular.png" alt="" />
+              </div>
+              </div>
+            </div>
+          </div>
         </div>
       </motion.div>
     </section>

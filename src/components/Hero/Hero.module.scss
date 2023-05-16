@@ -1,7 +1,11 @@
 @import '../../styles/contants.scss';
 
 .wrapper {
+    @media (max-width: $sm), (max-width: $md) {
+        height: 50rem;
+    }
     overflow: hidden;
+    height: 35rem;
 
 
     .container {
@@ -20,6 +24,10 @@
             flex-wrap: wrap;
         }
 
+        .textOne {
+            font-size:2.5rem;
+        }
+
 
         .lowerElements {
             @media (max-width: $sm), (max-width: $md) {
@@ -27,6 +35,38 @@
                 gap: 2rem;
                 justify-content: center;
             }
+            .image {
+                width: 10%;
+                margin: 0;
+            }
+            .imageMern {
+                width: 30%;
+                margin: 0;
+            }
+            .textAlign{
+                text-align: right;
+            }
+            .wrapper {
+                display: grid;
+            }
+            * {
+                box-sizing: border-box;
+              }
+              
+              /* Create two equal columns that floats next to each other */
+              .column {
+                float: left;
+                width: 50%;
+                padding: 10px;
+                height: 300px; /* Should be removed. Only for demonstration */
+              }
+              
+              /* Clear floats after the columns */
+              .row:after {
+                content: "";
+                display: table;
+                clear: both;
+              }
             margin-top: 12rem;
             display: flex;
             flex-wrap: wrap;
@@ -58,12 +98,13 @@
                 left: 0;
                 background-size: 20rem;
                 display: flex;
+                bottom: -2rem;
                 align-items: center;
                 justify-content: center;
                 background-position: bottom;
             }
             position: absolute;
-            bottom: -2rem;
+            bottom: 8rem;
             margin: auto;
             background-image: url("../splash.png");
             background-repeat: no-repeat;
