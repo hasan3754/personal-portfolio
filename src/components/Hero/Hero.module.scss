@@ -46,8 +46,19 @@
             .textAlign{
                 text-align: right;
             }
+            .textAlignLeft{
+                text-align: right;
+                margin-top: 5%;;
+            }
             .wrapper {
                 display: grid;
+                left: 26%;
+                position: relative;
+            }
+            .wrapperTwo {
+                left: 10%;
+                position: relative;
+                transform: translate(-70px,-171px);
             }
             * {
                 box-sizing: border-box;
@@ -67,7 +78,7 @@
                 display: table;
                 clear: both;
               }
-            margin-top: 12rem;
+            margin-top: 2rem;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -78,6 +89,8 @@
                 >:nth-child(2) {
                     line-height: 25px;
                 }
+                left: 36%;
+                position: relative;
             }
 
             .certificate {
@@ -104,12 +117,12 @@
                 background-position: bottom;
             }
             position: absolute;
-            bottom: 8rem;
+            bottom: -3rem;
             margin: auto;
-            background-image: url("../splash.png");
+            background-image: url(../splashThree.png);
             background-repeat: no-repeat;
             background-size: 23rem;
-            left: 33%;
+            left: 50%;
 
             img {
                 @media (max-width: $sm ) {

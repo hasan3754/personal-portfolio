@@ -1,0 +1,81 @@
+@import '../../styles/contants.scss';
+
+.wrapper{
+    width: 100%!important;
+    background-image: url(imageBack.jpg);
+    background-size: cover;
+    background-position: center;
+    .wrapperTwo{
+        width: 80%!important;
+        .margin{
+            margin: auto;
+            display: table;
+            color: #d813ad;
+            animation: flicker 1.5s infinite alternate;
+            text-shadow:
+                0 0 7px #fff,
+                0 0 10px #fff,
+                0 0 21px #fff,
+                0 0 42px rgb(223, 21, 155),
+                0 0 82px rgb(223, 21, 155),
+                0 0 92px rgb(223, 21, 155),
+                0 0 102px rgb(223, 21, 155),
+                0 0 151px rgb(223, 21, 155);
+          
+        }
+    }
+}
+
+.img {
+    margin-bottom: 1rem;
+    width: 0.5rem;
+    width: 20%;
+}
+
+.image {
+    width: 50%
+    ;
+}
+
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px rgb(223, 21, 155),
+        0 0 80px rgb(223, 21, 155),
+        0 0 90px rgb(223, 21, 155),
+        0 0 100px rgb(223, 21, 155),
+        0 0 150px rgb(223, 21, 155);
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+
+
+
+  .button {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 3px;
+    padding: 12px 24px;
+    border: 0;
+    color: white;
+    background: #61357c;
+    line-height: 1.15;
+    font-size: 16px;
+    &:hover {
+        transition: all .1s ease;
+        box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
+    }
+  }
+  .button:focus {outline:0;}
+

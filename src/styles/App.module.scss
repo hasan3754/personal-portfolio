@@ -2,5 +2,13 @@
 .container{
     overflow-x: clip;
     position: relative;
-    color: $primary;
+    color: white;
+    background: #61357c;
+}
+.containerTwo{
+    overflow-x: clip;
+    position: relative;
+    color: white;
+    background: #61357c;
+    width: 100%!important;
 }
