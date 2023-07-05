@@ -39,6 +39,21 @@
                 width: 10%;
                 margin: 0;
             }
+            .imageSocial {
+                width: 15%;
+                margin: 0;
+                margin-left: 20px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 20px;
+                padding-right: 20px;
+                border-radius: 10px;
+                &:hover {
+                    background-color: rgb(252, 243, 231, 0.2);
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                }
+
+            }
             .imageMern {
                 width: 30%;
                 margin: 0;
@@ -48,6 +63,10 @@
             }
             .textAlignLeft{
                 text-align: right;
+                margin-top: 5%;;
+            }
+            .textAlignLeftOrg{
+                text-align: left;
                 margin-top: 5%;;
             }
             .wrapper {

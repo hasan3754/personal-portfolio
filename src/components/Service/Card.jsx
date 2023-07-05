@@ -9,7 +9,7 @@ const Card = (props) => {
         <div className="col-12"><img className={`${css.image}`} src={"./" + Icon} alt="project" /></div>
         <div className="col-12">
             <h1 className="text-left mt-2 textTcolor">{designation}</h1>
-            <h1 className="text-left textTcolor">{title}</h1>
+            <h1 className="text-left textTcolor" style={{ fontSize: 13 }} >{title}</h1>
             <div className="row">
             <div className="col-5 text-left textTcolor">Tech stack:</div>
             <div className="col-7">

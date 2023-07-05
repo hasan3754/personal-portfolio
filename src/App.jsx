@@ -6,7 +6,7 @@ import Services from "./components/Service/Services";
 import Hero from './components/Hero/Hero'
 import People from './components/People/People'
 import Portfolio from './components/Portfolio/Portfolio'
-import Work from './components/Work/Work'
+import Qualities from './components/Qualities/Qualities'
 import css from './styles/App.module.scss'
 const App = () => {
   //don't forget to add font link in index.html
@@ -17,6 +17,7 @@ const App = () => {
       {/* <Experties/> */}
       {/* <Work/> */}
       <Services className={`${css.containerTwo}`} />
+      <Qualities />
       <Portfolio/>
       <People/>
       {/*<Footer/> */}

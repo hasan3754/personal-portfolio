@@ -1,7 +1,4 @@
 import React from "react";
-import { MdDesignServices } from "react-icons/md";
-import { FiCodesandbox } from "react-icons/fi";
-import { CgWebsite } from "react-icons/cg";
 import styled from "styled-components";
 import Card from "./Card";
 import { Slide } from "react-awesome-reveal";
@@ -18,11 +15,10 @@ const Services = () => {
         <Slide direction="left">
           <Card
             Icon='bitnet.png'
-            designation='Intern'
+            designation='Junior software engineer'
             title={"jan 2020 - june 2020 · 6 month's"}
             icons={['./laravel.jpeg']}
-            disc={`Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
+            disc={`After passing my Bsc in cse from daffodil international university. I have started my career in bitnet solutions as a junior software engineering. I have Worked in a team of laravel developers to develop and enhance several projects.`}
           />
         </Slide>
         <Slide direction="up">
@@ -31,8 +27,7 @@ const Services = () => {
             designation='Junior software engineer'
             title={"July 2020 - October 2021 · 1 yr 4 month's"}
             icons={['./laravel.jpeg','./angular.png']}
-            disc={`Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
+            disc={`I have worked in Infocrat solution as a fullstack laravel and angular developer. I have worked in various erp built with laravel and and angular and some customized software. Here i have worked in laravel microservice framework lumen.`}
           />
         </Slide>
         <Slide direction="right">
@@ -41,8 +36,7 @@ const Services = () => {
             designation='Senior software engineer'
             title={"Nov 2021 - Present · 1 yr 9 month's"}
             icons={['./laravel.jpeg','./vue.png','./angular.png']}
-            disc={`Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
+            disc={`Then I Joined syntech solution as a senior software engineer. Here i have worked as a team leader of several portions of multiple government projects. I am working as a fullstack laravel, codeigniter, angular, vuejs developer.`}
           />
         </Slide>
       </Cards>

@@ -35,6 +35,11 @@ const Hero = () => {
                     Laravel, Codeigniter, nodejs reactjs, angular, vuejs is my tech stack
                   </motion.span>
                 </div>
+                <div className={css.textAlignLeftOrg}>
+                  <a href="https://www.w3schools.com"><motion.img className={css.imageSocial} variants={fadeIn("right", "tween", 0.3, 1)} src="./laravel.jpeg" alt="" /></a>
+                  <a href="https://www.w3schools.com"><motion.img className={css.imageSocial} variants={fadeIn("right", "tween", 0.3, 1)} src="./vue.png" alt="" /></a>
+                  <a href="https://www.w3schools.com"><motion.img className={css.imageSocial} variants={fadeIn("right", "tween", 0.3, 1)} src="./angular.png" alt="" /></a>
+                </div>
             </div>
             <div className={css.column}>
             <div className={css.row}>
@@ -58,7 +63,7 @@ const Hero = () => {
                   <motion.img className={css.image} variants={fadeIn("right", "tween", 0.3, 1)} src="./laravel.jpeg" alt="" />
                   <motion.img className={css.image} variants={fadeIn("right", "tween", 0.3, 1)} src="./vue.png" alt="" />
                   <motion.img className={css.image} variants={fadeIn("right", "tween", 0.3, 1)} src="./angular.png" alt="" />
-              </div>
+                </div>
             </div>
             </div>
             </div>
