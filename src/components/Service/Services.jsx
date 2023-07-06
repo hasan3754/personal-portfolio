@@ -7,6 +7,11 @@ import css from "./Service.module.scss";
 const Services = () => {
   return (
     <Container id="service" className={css.wrapper}>
+          <div style={{width: "110%"}}>
+            <Slide direction="left" duration={20000}>
+              <img style={{float: "right", width: "10%"}} src="./running.gif" alt="" />
+            </Slide>
+          </div>
       <Container id="service" className={css.wrapperTwo}>
       <Slide direction="down">
         <h1 className={css.margin}>Companies I have Worked for</h1>
@@ -21,7 +26,7 @@ const Services = () => {
             disc={`After passing my Bsc in cse from daffodil international university. I have started my career in bitnet solutions as a junior software engineering. I have Worked in a team of laravel developers to develop and enhance several projects.`}
           />
         </Slide>
-        <Slide direction="up">
+        <Slide direction="down">
           <Card
             Icon='infocrat.png'
             designation='Junior software engineer'
