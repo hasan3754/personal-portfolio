@@ -7,6 +7,7 @@ import Hero from './components/Hero/Hero'
 import People from './components/People/People'
 import Portfolio from './components/Portfolio/Portfolio'
 import Qualities from './components/Qualities/Qualities'
+import EducationAndSkills from './components/EducationAndSkills/EducationAndSkills'
 import css from './styles/App.module.scss'
 const App = () => {
   //don't forget to add font link in index.html
@@ -18,6 +19,7 @@ const App = () => {
       {/* <Work/> */}
       <Services className={`${css.containerTwo}`} />
       <Qualities />
+      <EducationAndSkills />
       <Portfolio/>
       <People/>
       {/*<Footer/> */}
