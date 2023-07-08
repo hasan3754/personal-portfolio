@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)https://cdpn.io/Shruti-Ag/fullpage/mdyBqvw?anon=true&view= -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111">
+
+
+
+  
+  <title>CodePen - 🎉🎊Happy New Year🎊🎉</title>
+    <link rel="canonical" href="https://codepen.io/Shruti-Ag/pen/mdyBqvw">
+  
+  
+  
+  
+<style>
+:root{
+    --fc1: #f20;
+    --fc2: #ff0;
+    --fc3: #04f;
+    --fc4: #0f4;
+    --fc5: #f0f;
+    --fc: var(--fc1);
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    overflow: hidden; 
+}
+.fireworks:before, .fireworks:after{
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    box-shadow: -120px 0 var(--fc),
+                120px 0 var(--fc),
+                0 120px var(--fc),
+                0 -120px var(--fc),
+                45px 45px var(--fc),
+                -45px 45px var(--fc),
+                85px 85px var(--fc),
+                -85px 85px var(--fc),
+                45px -45px var(--fc),
+                -45px -45px var(--fc),
+                85px -85px var(--fc),
+                -85px -85px var(--fc),
+                65px 0 var(--fc),
+                -65px 0 var(--fc),
+                0 65px var(--fc),
+                0 -65px var(--fc),
+                100px 45px var(--fc),
+                -100px 45px var(--fc),
+                -50px 100px var(--fc),
+                50px 100px var(--fc),
+                100px -45px var(--fc),
+                -100px -45px var(--fc),
+                -50px -100px var(--fc),
+                50px -100px var(--fc),
+                5px 10px var(--fc);
+    animation: 1s bang ease-out infinite backwards, 
+                1s gravity ease-in infinite backwards, 
+                5s position linear infinite backwards;
+}
+.fireworks:after{
+    animation-delay: 1.25s, 1.25s, 1.25s;
+    animation-duration: 1.25s, 1.25s, 6.25s;
+}
+@keyframes bang {
+    from {
+        box-shadow: 0 0 #fff, 
+                    0 0 #fff, 
+                    0 0 #fff, 
+                    0 0 #fff, 
+                    0 0 #fff, 
+                    0 0 #fff, 
+                    0 0 #fff, 
+                    0 0 #fff,
+                    0 0 #fff, 
+                    0 0 #fff, 
+                    0 0 #fff, 
+                    0 0 #fff, 
+                    0 0 #fff, 
+                    0 0 #fff, 
+                    0 0 #fff, 
+                    0 0 #fff,
+                    0 0 #fff, 
+                    0 0 #fff, 
+                    0 0 #fff, 
+                    0 0 #fff, 
+                    0 0 #fff, 
+                    0 0 #fff, 
+                    0 0 #fff, 
+                    0 0 #fff,
+                    0 0 #fff; 
+    }
+}
+
+@keyframes gravity {
+    to {
+        transform: translate(-10px, 150px);
+        height: 6px;
+        width: 4px;
+        opacity: 0; 
+    }
+}
+@keyframes position {
+    0%, 19.9% {
+        margin-top: 10%;
+        margin-left: 40%;
+        --fc: var(--fc1);
+    }
+
+    20%, 39.9% {
+        margin-top: 2%;
+        margin-left: 70%; 
+        --fc: var(--fc2);
+    }
+
+    40%, 59.9% {
+        margin-top: 20%;
+        margin-left: 70%; 
+        --fc: var(--fc3);
+    }
+
+    60%, 79.9% {
+        margin-top: 30%;
+        margin-left: 20%;
+        --fc: var(--fc4);
+    }
+
+    80%, 99.9% {
+        margin-top: 30%;
+        margin-left: 80%; 
+        --fc: var(--fc5);
+    } 
+}
+.text{
+    color: #000;
+    width: 100%;
+    height: 100vh;
+    font-family: cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 4rem;
+}
+.text span{
+    text-shadow: 0 0 12px #ffe0b4,
+                0 0 #ffe044,
+                0 0 5px #ffe074;
+    margin: 0;
+}
+.text span:last-child{
+    margin: 20px;
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+</head>
+
+<body translate="no">
+  <div class="fireworks"></div>
+<div class="text">
+    <span>Happy</span>
+    <span>New</span>
+    <span>Year</span>
+    <span>2020</span>
+</div>
+    <script src="./stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js.download"></script>
+
+  
+      <script id="rendered-js">
+// 🎉🎉 happy new year to all 🎉🎉
+//# sourceURL=pen.js
+    </script>
+
+  
+
+
+
+</body></html>

@@ -17,7 +17,32 @@ const EducationAndSkills = () => {
     </Slide>
     <div className="row" style={{ width: "80%", margin: "auto" }}>
       <div className="col-6">
-      <div className={css.div}>This is a div element with a box-shadow</div>
+      <div>
+        <div class={css.block}>
+          <div>
+            <h4>Degree : Bsc in Computer science and engineering</h4>
+            <h4>Institute : Daffodil international university</h4>
+            <h4>Duration : 2014-2019</h4>
+            <p>Achieving my bachelors degree was a great journey. I have practiced and learned computer science from my university. I solved competitive proramming problems and also done several projects course wise.</p>
+            <a href="https://daffodilvarsity.edu.bd/department/cse/program/1/1/undergraduate">Courses</a>
+          </div>
+        </div>
+        <div class={css.sock}></div>
+        <div class={css.dock}></div>
+      </div>
+      <div>
+        <div class={css.block}>
+          <div>
+            <h4>Degree : Bsc in Computer science and engineering</h4>
+            <h4>Institute : Daffodil international university</h4>
+            <h4>Duration : 2014-2019</h4>
+            <p>Achieving my bachelors degree was a great journey. I have practiced and learned computer science from my university. I solved competitive proramming problems and also done several projects course wise.</p>
+            <a href="https://daffodilvarsity.edu.bd/department/cse/program/1/1/undergraduate">Courses</a>
+          </div>
+        </div>
+        <div class={css.sock}></div>
+        <div class={css.dock}></div>
+      </div>
       </div>
       <div className="col-6">
         <Slide direction="right">
