@@ -17,7 +17,7 @@ const EducationAndSkills = () => {
     </Slide>
     <div className="row" style={{ width: "80%", margin: "auto" }}>
       <div className="col-6">
-      <div>
+      <div className={css.educationHeight}>
         <div class={css.block}>
           <div>
             <h4>Degree : Bsc in Computer science and engineering</h4>
@@ -30,7 +30,7 @@ const EducationAndSkills = () => {
         <div class={css.sock}></div>
         <div class={css.dock}></div>
       </div>
-      <div>
+      <div className={css.educationHeight}>
         <div class={css.block}>
           <div>
             <h4>Degree : Bsc in Computer science and engineering</h4>
@@ -45,39 +45,106 @@ const EducationAndSkills = () => {
       </div>
       </div>
       <div className="col-6">
-        <Slide direction="right">
-        <img className={css.imageSocial} style={{ width: "137%" }} variants={fadeIn("right", "tween", 0.3, 1)} src="./timemanagement.gif" alt="" />
-        </Slide>
-      </div>
-    </div>
-    <div className="row" style={{ width: "80%", margin: "auto" }}>
-      <div className="col-6">
-      <Slide direction="left">
-      <div className={css.rainbowbox}>
-      <h3 className={css.margin} style={{ marginTop: 20 }}>Hard worker</h3>
-      <p style={{ padding: 20 }}>I am a hard working person. I do hardwork to meet my deadlines. I really care about the software being error free. I have developed delivered morethan  5 complex Web projects. I have gained good experience by doing these. It is impossible to achieve success without putting in a lot of effort. But I also keep a work life balance myself. Hark work is nothing without happiness. When a person is happy he can contribute even better to his work and improve life of other human beings.</p>
-      </div>
-      </Slide>
-      </div>
-      <div className="col-6">
-        <Slide direction="right">
-        <img className={css.imageSocial} style={{ width: "57%", marginLeft: 205, marginTop: 78 }} variants={fadeIn("right", "tween", 0.3, 1)} src="./hardwork.gif" alt="" />
-        </Slide>
-      </div>
-    </div>
-    <div className="row" style={{ width: "80%", margin: "auto" }}>
-      <div className="col-6">
-      <Slide direction="left">
-      <div className={css.rainbowbox}>
-      <h3 className={css.margin} style={{ marginTop: 20 }}>Team worker</h3>
-      <p style={{ padding: 20 }}>I am a team working person. I can complete my tasks alone also. when I am working in a team I really care about the communication between all team members. I always maintain good communication about business logic of software to my other team members. I also discuss  about how can we improve user experience of the software we are developing.</p>
-      </div>
-      </Slide>
-      </div>
-      <div className="col-6">
-        <Slide direction="right">
-        <img className={css.imageSocial} style={{ width: "86%", marginLeft: 90, marginTop: 77 }} variants={fadeIn("right", "tween", 0.3, 1)} src="./teamwork.gif" alt="" />
-        </Slide>
+      <div class="row mb-5">
+        <div class="col-12 col-sm-6 col-md-4">
+          <div className={`${css.card} ${css.cardPurpleBlue} text-white mb-3 mb-md-0`}>
+          <div className="card-body">
+              <div className="row">
+                  <img className={css.imageSocial} style={{ width: 50, height: 50, margin: 'auto' }} src="./laravel.png" alt="" />
+              </div>
+              <div className="row">
+                  <p style={{ margin: 'auto' }}>Laravel</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div className={`${css.card} ${css.cardGreenish} text-white mb-3 mb-md-0`}>
+            <div className="card-body">
+              <div className="row">
+                  <img className={css.imageSocial} style={{ width: 50, height: 50, margin: 'auto' }} src="./vue.png" alt="" />
+              </div>
+              <div className="row">
+                  <p style={{ margin: 'auto' }}>HTML</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div className={`${css.card} ${css.cardPinkish} text-white mb-3 mb-md-0`}>
+            <div className="card-body d-flex justify-content-between align-items-end">
+              <div className="card-number">
+                <div className="h3 m-0">288K</div><small><strong>REVENUE</strong></small>
+              </div>
+              <div className="card-description text-right"><small>235K</small><br/><small>22.48%</small></div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="row mb-5">
+        <div class="col-12 col-sm-6 col-md-4">
+          <div className={`${css.card} ${css.cardBlueish} text-white mb-3 mb-md-0`}>
+            <div className="card-body d-flex justify-content-between align-items-end">
+              <div className="card-number">
+                <div className="h3 m-0">288K</div><small><strong>REVENUE</strong></small>
+              </div>
+              <div className="card-description text-right"><small>235K</small><br/><small>22.48%</small></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div className={`${css.card} ${css.cardRainbowish} text-white mb-3 mb-md-0`}>
+            <div className="card-body d-flex justify-content-between align-items-end">
+              <div className="card-number">
+                <div className="h3 m-0">288K</div><small><strong>REVENUE</strong></small>
+              </div>
+              <div className="card-description text-right"><small>235K</small><br/><small>22.48%</small></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div className={`${css.card} ${css.cardAnotherish} text-white mb-3 mb-md-0`}>
+            <div className="card-body d-flex justify-content-between align-items-end">
+              <div className="card-number">
+                <div className="h3 m-0">288K</div><small><strong>REVENUE</strong></small>
+              </div>
+              <div className="card-description text-right"><small>235K</small><br/><small>22.48%</small></div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="row mb-5">
+        <div class="col-12 col-sm-6 col-md-4">
+          <div className={`${css.card} ${css.cardPurpleBlue} text-white mb-3 mb-md-0`}>
+            <div className="card-body d-flex justify-content-between align-items-end">
+              <div className="card-number">
+                <div className="h3 m-0">288K</div><small><strong>REVENUE</strong></small>
+              </div>
+              <div className="card-description text-right"><small>235K</small><br/><small>22.48%</small></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div className={`${css.card} ${css.cardGreenish} text-white mb-3 mb-md-0`}>
+            <div className="card-body d-flex justify-content-between align-items-end">
+              <div className="card-number">
+                <div className="h3 m-0">288K</div><small><strong>REVENUE</strong></small>
+              </div>
+              <div className="card-description text-right"><small>235K</small><br/><small>22.48%</small></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div className={`${css.card} ${css.cardPinkish} text-white mb-3 mb-md-0`}>
+            <div className="card-body d-flex justify-content-between align-items-end">
+              <div className="card-number">
+                <div className="h3 m-0">288K</div><small><strong>REVENUE</strong></small>
+              </div>
+              <div className="card-description text-right"><small>235K</small><br/><small>22.48%</small></div>
+            </div>
+          </div>
+        </div>
+        </div>
       </div>
     </div>
     </div>
