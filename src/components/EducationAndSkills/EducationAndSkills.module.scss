@@ -113,6 +113,8 @@
     height: 250px;
     background: linear-gradient(0deg, #000, #272727);
     z-index: 1;
+    padding: 5%;
+    font-size: 1rem;
 }
 
  .sock {
@@ -167,7 +169,7 @@
   }
 
   .cardPinkish {
-    background: linear-gradient(68.6deg, rgb(252, 165, 241) 1.8%, rgb(181, 255, 255) 100.5%);
+    background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
     box-shadow: 0 5px 20px rgba(35, 210, 253, 0.3);
   }
 
