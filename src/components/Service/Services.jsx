@@ -8,16 +8,16 @@ const Services = () => {
   return (
     <Container id="service" className={css.wrapper}>
           <div style={{width: "110%"}}>
-            <Slide direction="left" duration={20000}>
+            <Slide direction="left" duration={20000} triggerOnce={true}>
               <img style={{float: "right", width: "10%"}} src="./running.gif" alt="" />
             </Slide>
           </div>
       <Container id="service" className={css.wrapperTwo}>
-      <Slide direction="down">
+      <Slide direction="down" triggerOnce={true}>
         <h1 className={css.margin}>Companies I have Worked for</h1>
       </Slide>
       <Cards>
-        <Slide direction="left">
+        <Slide direction="left" triggerOnce={true}>
           <Card
             Icon='bitnet.png'
             designation='Junior software engineer'
@@ -26,7 +26,7 @@ const Services = () => {
             disc={`After passing my Bsc in cse from daffodil international university. I have started my career in bitnet solutions as a junior software engineering. I have Worked in a team of laravel developers to develop and enhance several projects.`}
           />
         </Slide>
-        <Slide direction="down">
+        <Slide direction="down" triggerOnce={true}>
           <Card
             Icon='infocrat.png'
             designation='Junior software engineer'
@@ -35,7 +35,7 @@ const Services = () => {
             disc={`I have worked in Infocrat solution as a fullstack laravel and angular developer. I have worked in various erp built with laravel and and angular and some customized software. Here i have worked in laravel microservice framework lumen.`}
           />
         </Slide>
-        <Slide direction="right">
+        <Slide direction="right" triggerOnce={true}>
           <Card
             Icon='syntech.png'
             designation='Senior software engineer'
